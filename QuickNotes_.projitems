@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{0C2B504B-8D2B-4F64-A627-D96DE2787EAC}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>QuickNotes_.Android</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\TaskManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\Task.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DL\TaskDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DL\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BL\Contracts\BusinessEntityBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BL\Contracts\IBusinessEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DAL\TaskRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)BL\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Managers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DAL\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DL\" />
+    <Folder Include="$(MSBuildThisFileDirectory)BL\Contracts\" />
+  </ItemGroup>
+</Project>
